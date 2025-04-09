@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>242 HairStudio | Booking Cukur Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS akan ditempatkan di sini */
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>242 <span>HairStudio</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#barbers">Stylist</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Gaya Rambut Baru,<br>Rasa Percaya Diri Baru</h2>
+                <p>Dapatkan potongan rambut profesional dari stylist terbaik kami.</p>
+                <a href="#booking" class="btn">Booking Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Layanan Kami</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Haircut</h3>
+                    <p>Potongan rambut klasik dengan teknik presisi.</p>
+                    <span class="price">Rp 30.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Beard Trim</h3>
+                    <p>Perawatan jenggot & styling.</p>
+                    <span class="price">Rp 10.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Coloring</h3>
+                    <p>Pewarnaan rambut dengan stylish.</p>
+                    <span class="price">Rp 200.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stylist -->
+    <section id="barbers" class="barbers">
+        <div class="container">
+            <h2 class="section-title">Tim Stylist Kami</h2>
+            <div class="barbers-grid">
+                <div class="barber-card">
+                    <img src="img/hero1.jpg" alt="Barber 1">
+                    <h3>Rayan Husni</h3>
+                    <p>Head Barber</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="barber-card">
+                    <img src="img/hero2.jpg" alt="Barber 2">
+                    <h3>Asep Zaenal</h3>
+                    <p>Bayar Suka-Suka</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Booking Online</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor HP</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Pilih Layanan</label>
+                    <select id="service" required>
+                        <option value="">-- Pilih Layanan --</option>
+                        <option value="Classic Cut">Haircut (Rp 30.000)</option>
+                        <option value="Beard Trim">Beard Trim (Rp 10.000)</option>
+                        <option value="Premium Style">Coloring (Rp 200.000)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="barber">Pilih Stylist</label>
+                    <select id="barber" required>
+                        <option value="">-- Pilih Stylist --</option>
+                        <option value="Rayan">Rayan Husni</option>
+                        <option value="Asep">Asep Zaenal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Tanggal Booking</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Waktu Booking</label>
+                    <input type="time" id="time" required>
+                </div>
+                <button type="submit" class="btn">Konfirmasi Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimoni Pelanggan</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Potongan rambut terbaik yang pernah saya dapatkan!"</p>
+                    <h4>- Budi</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Pelayanan cepat dan hasilnya rapi."</p>
+                    <h4>- Andi</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>242 <span>HairStudio</span></h2>
+                    <p>Cimurah, Jalan Karangpawitan No.242, Sebrang pom bensin nagrog, Samping kedai 242, Jawa Barat</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@242hairstudio.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Kami</h3>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 242 HairStudio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="javascript/script.js">
+    </script>
+</body>
+</html>
